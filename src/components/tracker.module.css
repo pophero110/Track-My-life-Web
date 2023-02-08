@@ -1,0 +1,61 @@
+.trackerContainer__title {
+	font-size: 3rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trackerContainer__trackerList {
+	display: flex;
+}
+
+.trackerContainer__tracker {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	font-size: 2rem;
+	width: 100%;
+	padding: 3rem;
+	background-color: var(--seconday-color);
+	border-radius: 0.5rem;
+}
+
+.trackerContainer__createButton {
+	font-size: 2rem;
+	background-color: var(--success-color);
+	border-radius: 0.5rem;
+	color: white;
+	padding: 1rem;
+}
+
+.backButton {
+	font-size: 2rem;
+	text-decoration: underline;
+	color: lightgrey;
+}
+
+/* Tracker Form */
+
+.trackerForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.trackerForm__label {
+	font-size: 2rem;
+}
+
+.trackerForm__input {
+	padding: 1rem;
+}
+
+.trackerForm__submitButton {
+	padding: 1rem 2rem;
+	text-align: center;
+	background-color: var(--seconday-color);
+	border-radius: 0.5rem;
+	font-size: 2rem;
+}

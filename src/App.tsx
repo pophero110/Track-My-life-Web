@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import './global.css';
+import { useState } from 'react';
+import TrackerList from './components/trackerList';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [formVisible, setFormVisible] = useState(false);
+
+	return (
+		<div className='App'>
+			<head>
+				<link
+					rel='preconnect'
+					href='https://fonts.googleapis.com'></link>
+				<link
+					rel='preconnect'
+					href='https://fonts.gstatic.com'
+					crossOrigin=''></link>
+				<link
+					href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'
+					rel='stylesheet'></link>
+			</head>
+			<div
+				style={{
+					padding: '2rem',
+				}}>
+				<TrackerList
+					formVisible={formVisible}
+					setFormVisible={setFormVisible}></TrackerList>
+			</div>
+		</div>
+	);
 }
 
 export default App;
