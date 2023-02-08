@@ -1,0 +1,26 @@
+:root {
+	--primary-color: #e0fbfc;
+	--seconday-color: #b1f5f8;
+	--success-color: #17c964;
+	--warning-color: #f5a524;
+	--danger-error: #f31260;
+}
+
+html {
+	font-size: 8px;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
+.mb {
+	margin-bottom: 1rem;
+}
+
+.mb-2x {
+	margin-bottom: 2rem;
+}
