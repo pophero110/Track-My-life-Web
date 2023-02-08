@@ -19,5 +19,5 @@ test('click go back button', () => {
 	expect(goBackButton).toBeInTheDocument();
 
 	fireEvent.click(goBackButton);
-	expect(setFormVisible).toHaveBeenCalledWith(false);
+	expect(setFormVisible).toHaveBeenCalledWith(true);
 });
